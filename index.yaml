@@ -3,12 +3,12 @@ entries:
   sample-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-21T10:24:18.93869121+02:00"
+    created: "2024-06-21T10:39:51.571292269+02:00"
     description: A Helm chart for Kubernetes
     digest: b890bc6788f02f30bc1710e8a523d0c9e7bf84b9ac44a0c384a6e38ab4425355
     name: sample-app
     type: application
     urls:
-    - https://michaelRanivoEpitech.github.io/sample-app/sample-app-0.1.0.tgz
+    - https://michaelRanivoEpitech.github.io/sample-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-21T10:24:18.937341744+02:00"
+generated: "2024-06-21T10:39:51.570810858+02:00"
