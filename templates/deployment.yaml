@@ -28,47 +28,47 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: {{ .Values.configmap.name }}
-              key: {{ .Values.configmap.app_debug }}
+              key: app_debug
         - name: APP_ENV
           valueFrom:
             configMapKeyRef:
               name: {{ .Values.configmap.name }}
-              key: {{ .Values.configmap.app_env }}
+              key: app_env
         - name: APP_KEY
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.app_key }}
+              key: laravel-app-key
         - name: DB_CONNECTION
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_connection }}
+              key: db-connection
         - name: DB_HOST
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_host }}
+              key: db-host
         - name: DB_PORT
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_port }}
+              key: db-port
         - name: DB_DATABASE
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_database }}
+              key: db-database
         - name: DB_USERNAME
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_username }}
+              key: db-username
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
               name: {{ .Values.secret.name }}
-              key: {{ .Values.secret.db_password }}
+              key: db-password
         resources:
           requests:
             memory: {{ .Values.resources.requestsMemory }}

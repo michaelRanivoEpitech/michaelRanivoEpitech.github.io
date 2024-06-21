@@ -4,5 +4,5 @@ metadata:
   name: {{ .Values.configmap.name }}
   namespace: {{ .Values.namespace }}
 data:
-  app_debug: {{ .Values.configmap.app_debug }}
-  app_env: {{ .Values.configmap.app_env }}
+  app_debug: "{{ .Values.configmap.appDebug }}"
+  app_env: {{ .Values.configmap.appEnv }}
