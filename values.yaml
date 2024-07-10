@@ -83,5 +83,5 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 strategy:
-  # maxUnavailable: 25%
-  # maxSurge: 25%
+  maxUnavailable: 25%
+  maxSurge: 25%

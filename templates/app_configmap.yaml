@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.configmap.name }}
   namespace: {{ .Values.namespace }}
+  labels:
+    kubequest: {{ .Values.labels }}
 data:
   app_debug: "{{ .Values.configmap.appDebug }}"
   app_env: {{ .Values.configmap.appEnv }}

@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: {{ .Values.service.name }}
   namespace: {{ .Values.namespace }}
+  labels:
+    kubequest: {{ .Values.labels }}
 spec:
   type: ClusterIP
   selector:
@@ -19,6 +21,8 @@ kind: Service
 metadata:
   name: {{ .Values.secureService.name }}
   namespace: {{ .Values.namespace }}
+  labels:
+    kubequest: {{ .Values.labels }}
 spec:
   type: ClusterIP
   selector:
